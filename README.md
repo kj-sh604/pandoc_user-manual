@@ -1,1 +1,103 @@
-TODO: Write README
+# Markdown to User Manual via `pandoc` 📃
+
+This script generates an .html, .pdf, .odt, and .docx file for a user manual and/or technical documentation — all from a single markdown file (`user-manual.md`). The documents are generated with `pandoc` and standard POSIX/GNU core utilities.
+
+This project was derived from another personal project of mine, [pandoc-resume](https://github.com/kj-sh604/pandoc-resume)
+
+## Features
+
+### HTML Output
+- Minimal footprint, `styles.css` only contain styles needed for responsive UX.
+- Automatically generates a "table of contents" transformed into a modal menu bar with its subsections.
+
+### Document Output
+- Extensive LaTeX template (`template.tex`) for a less "LaTeX-y"-looking document.
+- Utilizes standard `pandoc` features to generate a .docx and .odt file
+
+## Screengrabs 📹📸
+
+### Desktop 🖥
+
+![Dark Mode](static_README/fullscreen-dark.png)
+
+Auto-generated Table of Contents Navigation can be found on the right-hand side of the page as a modal.
+
+![Light Mode](static_README/fullscreen-light.png)
+
+Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
+
+### Mobile 📱
+
+![Dark Mode Mobile](static_README/mobile-dark.png)
+
+Auto-generated Table of Contents Navigation can be found on the bottom right-hand side as a modal.
+
+![Light Mode Mobile](static_README/mobile-light.png)
+
+Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
+
+### Document 📄
+
+![PDF Output](static_README/pdf.png)
+
+### Site Navigation Example 📼
+
+[Site Navigation Demo](static_README/navigation-demo.webm)
+
+Browser-native smooth scrolling and navigation ✨.
+
+
+## Dependencies 🔗 
+* pandoc
+* LaTeX
+* make
+* POSIX-compatible environment
+
+### Installation Instructions for Dependencies ⬇️ 📦
+
+#### macOS (using Homebrew):
+
+1. Install Homebrew if you haven't already: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. Update Homebrew: `brew update`
+3. Install pandoc and recommended dependencies:
+   - `brew install pandoc`
+   - `brew install --cask mactex` (for LaTeX support)
+   - `brew install imagemagick` (for image conversion)
+   - `brew install librsvg` (for SVG support)
+   - `brew install libxml2` (for XML support)
+   - `brew install make` (for building and compiling)
+
+note: on macOS, you may need to install xcode and the xcode command line tools before installing homebrew.
+
+#### Ubuntu:
+
+1. Update the package index: `sudo apt update`
+2. Install pandoc and recommended dependencies:
+   - `sudo apt install pandoc`
+   - `sudo apt install texlive-latex-base` (for LaTeX support)
+   - `sudo apt install texlive-xetex` (for XeTeX support)
+   - `sudo apt install texlive-fonts-recommended` (for additional fonts)
+   - `sudo apt install imagemagick` (for image conversion)
+   - `sudo apt install librsvg2-bin` (for SVG support)
+   - `sudo apt install libxml2-utils` (for XML support)
+   - `sudo apt install build-essential` (includes make, for building and compiling)
+
+#### Arch Linux:
+
+1. Update the package index: `sudo pacman -Syy`
+2. Install pandoc and recommended dependencies:
+   - `sudo pacman -S pandoc`
+   - `sudo pacman -S texlive-core` (for LaTeX support)
+   - `sudo pacman -S texlive-xetex` (for XeTeX support)
+   - `sudo pacman -S imagemagick` (for image conversion)
+   - `sudo pacman -S librsvg` (for SVG support)
+   - `sudo pacman -S libxml2` (for XML support)
+   - `sudo pacman -S base-devel` (includes make, for building and compiling)
+
+#### Windows
+* Please refer to this official pandoc document for installation instructions: https://pandoc.org/installing.html#windows
+
+# Usage
+
+* running `make` or `make compile` builds all the assets
+* `make clean` deletes all the generated assets
