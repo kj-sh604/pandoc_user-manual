@@ -96,8 +96,7 @@ note: on macOS, you may need to install xcode and the xcode command line tools b
 1. Update the package index: `sudo pacman -Syy`
 2. Install pandoc and recommended dependencies:
    - `sudo pacman -S pandoc`
-   - `sudo pacman -S texlive-core` (for LaTeX support)
-   - `sudo pacman -S texlive-xetex` (for XeTeX support)
+   - `sudo pacman -S texlive texlive-lang` (for LaTeX support)
    - `sudo pacman -S imagemagick` (for image conversion)
    - `sudo pacman -S librsvg` (for SVG support)
    - `sudo pacman -S libxml2` (for XML support)
