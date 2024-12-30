@@ -16,11 +16,11 @@ This project was derived from another personal project of mine, [pandoc-resume](
 
 ## Screengrabs 📹📸
 
-### Desktop 🖥
-
 Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
 
 Auto-generated Table of Contents Navigation can be found on the right-hand side of the page as a modal.
+
+### Desktop 🖥
 
 #### Dark Mode
 
