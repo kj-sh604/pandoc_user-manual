@@ -45,34 +45,27 @@ $endif$
 \let\oldhref\href
 \renewcommand{\href}[3][blue]{\oldhref{#2}{\color{#1}{#3}}}
 
+% Title Page
 \renewcommand{\maketitle}{
     \begin{titlepage}
         \centering
-        \vspace*{\fill} % Push content to vertically center
-        {\Huge\bfseries \thetitle\par} % Title
-        \vspace{1em} % Space between title and subtitle
-        {\Large \subtitle\par} % Subtitle
-        \vspace{1em} % Space between subtitle and author
-        {\large \theauthor\par} % Author
-        \vspace{1em} % Space between author and date
-        {\large \thedate\par} % Date
-        \vspace*{\fill} % Push content to vertically center
+        \vspace*{\fill}
+        {\Huge\bfseries \thetitle\par}
+        \vspace{1em}
+        {\Large \subtitle\par}
+        \vspace{1em}
+        {\large \theauthor\par}
+        \vspace{1em}
+        {\large \thedate\par}
+        \vspace*{\fill}
     \end{titlepage}
 }
 
 \renewcommand{\rmdefault}{phv} % Set the default font to Helvetica
 
-% Link images
-\newcommand{\pdf}{\includegraphics[height=.85em]{cv/pdf.png}}
-\newcommand{\yt}{\includegraphics[height=.85em]{cv/yt.png}}
-\newcommand{\gh}{\includegraphics[height=.85em]{cv/gh.png}}
-\newcommand{\www}{\includegraphics[height=.85em]{cv/www.png}}
-\newcommand{\email}{\includegraphics[height=.85em]{cv/email.png}}
-
-
 % Custom section spacing and formatting
 \titleformat{\part}{\Huge\scshape\filcenter}{}{1em}{}
-\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[1pt]}]
 \titlespacing{\section}{0pt}{3pt}{7pt}
 \titleformat{\subsection}{\large\bfseries\centering}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
 \titlespacing{\subsection}{0pt}{7pt}{7pt}
