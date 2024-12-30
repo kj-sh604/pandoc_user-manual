@@ -1,5 +1,24 @@
 /* add Styles only as needed */
 
+@media (prefers-reduced-motion: reduced) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+:target {
+    scroll-margin-top: 6.25rem;
+    outline: 0.375rem solid mediumseagreen;
+    animation: fadeOutOutline 1000ms 1000ms forwards;
+}
+
+@keyframes fadeOutOutline {
+    to {
+        outline-color: transparent;
+    }
+}
+
+
 .title {
     font-size: 2.625rem;
     margin: 0;
@@ -25,6 +44,7 @@ html {
     max-width: 80rem;
     width: 100%;
     padding-bottom: 48rem;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -35,24 +55,6 @@ video {
     max-width: 100%;
     max-height: 100%;
     height: auto;
-}
-
-@media (prefers-reduced-motion: reduced) {
-    html {
-        scroll-behavior: auto;
-    }
-}
-
-:target {
-    scroll-margin-top: 6.25rem;
-    outline: 0.375rem solid mediumseagreen;
-    animation: fadeOutOutline 1000ms 1000ms forwards;
-}
-
-@keyframes fadeOutOutline {
-    to {
-        outline-color: transparent;
-    }
 }
 
 nav {
