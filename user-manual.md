@@ -1,6 +1,6 @@
 ---
 title: Tux User Manual
-subtitle: not a real product lol
+subtitle: Demo Product (Not Real)
 author: kj_sh604
 date: December 29, 2024
 linkcolor: blue
