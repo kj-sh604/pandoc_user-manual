@@ -2,20 +2,24 @@
 title: Tux User Manual
 subtitle: Demo Product (Not Real)
 author: kj_sh604
-date: December 29, 2024
+date: 03:14:07 UTC on January 19, 2038
 linkcolor: blue
 pdf-engine: xelatex
 viewport: width=device-width, initial-scale=1
 ---
 
 <!-- Templating Stuff -->
-<meta name="color-scheme" content="light dark">
-\break
+<meta name="color-scheme" content="light dark"> <!-- this allows native HTML dark mode and light mode for users -->
+\break <!-- this is a page break macro -->
 
 <!-- Main Content Starts Here -->
 # Introduction
 
 Tux is a cutting-edge software solution designed to streamline your workflow and increase productivity. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+![Tux Running as a Daemon](static/img/samples/tux-daemon.png)
+
+\break
 
 # System Requirements
 
@@ -24,6 +28,8 @@ Tux is a cutting-edge software solution designed to streamline your workflow and
 * Memory: 8 GB RAM (16 GB recommended)
 * Storage: 64 GB available disk space
 * Graphics: GNUvisor LiberonX Pro (GLP-FTX 256) or NVIDIA/AMD equivalent
+
+![*borat voice*: Great Success! This is good system for Tux](static/img/samples/system-fetch.png)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
