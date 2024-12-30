@@ -18,25 +18,32 @@ This project was derived from another personal project of mine, [pandoc-resume](
 
 ### Desktop 🖥
 
-![Dark Mode](static_README/fullscreen-dark.png)
+Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
 
 Auto-generated Table of Contents Navigation can be found on the right-hand side of the page as a modal.
 
+#### Dark Mode
+
+![Dark Mode](static_README/fullscreen-dark.png)
+
+#### Light Mode
+
 ![Light Mode](static_README/fullscreen-light.png)
 
-Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
 
 ### Mobile 📱
 
+#### Dark Mode
+
 ![Dark Mode Mobile](static_README/mobile-dark.png)
 
-Auto-generated Table of Contents Navigation can be found on the bottom right-hand side as a modal.
+#### Light Mode
 
 ![Light Mode Mobile](static_README/mobile-light.png)
 
-Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system settings.
+### Document Example 📄
 
-### Document 📄
+#### PDF Output
 
 ![PDF Output](static_README/pdf.png)
 
