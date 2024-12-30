@@ -83,9 +83,7 @@ note: on macOS, you may need to install xcode and the xcode command line tools b
 1. Update the package index: `sudo apt update`
 2. Install pandoc and recommended dependencies:
    - `sudo apt install pandoc`
-   - `sudo apt install texlive-latex-base` (for LaTeX support)
-   - `sudo apt install texlive-xetex` (for XeTeX support)
-   - `sudo apt install texlive-fonts-recommended` (for additional fonts)
+   - `sudo apt install texlive-full` (for LaTeX support)
    - `sudo apt install imagemagick` (for image conversion)
    - `sudo apt install librsvg2-bin` (for SVG support)
    - `sudo apt install libxml2-utils` (for XML support)
