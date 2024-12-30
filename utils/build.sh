@@ -29,18 +29,13 @@ if [ ! -f "template.tex" ]; then
 fi
 
 echo "'public' and 'output' directories created"
-echo
 mkdir -p ./output/ ./public/
 echo "generating website... => $HTML_PATH"
 cp -R ./static/ ./public/
 pandoc user-manual.md -s -c ./static/style.css --toc -o $HTML_PATH || { echo 'error generating index.html'; exit 0;}
-echo
 echo "generating .pdf... => $PDF_PATH"
 pandoc user-manual.md --template=template.tex --pdf-engine=xelatex --toc -o $PDF_PATH || { echo 'error generating .pdf'; exit 0;}
-echo
 echo "generating .docx... => $DOCX_PATH"
 pandoc user-manual.md -o $DOCX_PATH || { echo 'error generating .docx'; exit 0;}
-echo
 echo "generating .odt... => $ODT_PATH"
 pandoc user-manual.md -o $ODT_PATH || { echo 'error generating .odt'; exit 0;}
-echo
