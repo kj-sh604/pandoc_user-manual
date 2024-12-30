@@ -106,7 +106,11 @@ note: on macOS, you may need to install xcode and the xcode command line tools b
 #### Windows
 * Please refer to this official pandoc document for installation instructions: https://pandoc.org/installing.html#windows
 
-# Usage
+## Usage 🛠
 
 * running `make` or `make compile` builds all the assets
 * `make clean` deletes all the generated assets
+
+### Output ⚙
+* The website output (HTML) of the script will be found in the `public/` directory.
+* All document output (PDF, Word, Open Document Format) will be found in the `output/` directory.
