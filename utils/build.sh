@@ -26,14 +26,14 @@ echo
 mkdir -p ./output/ ./public/
 echo "generating website... => ./public/index.html"
 cp -R ./static/ ./public/
-pandoc user-manual.md -s -c ./static/style.css --toc -o ./public/index.html
+pandoc user-manual.md -s -c ./static/style.css --toc -o ./public/index.html || { echo 'error generating index.html'; exit 0;}
 echo
 echo "generating .pdf... => ./output/user-manual.pdf"
-pandoc user-manual.md --template=template.tex --pdf-engine=xelatex --toc -o ./output/user-manual.pdf
+pandoc user-manual.md --template=template.tex --pdf-engine=xelatex --toc -o ./output/user-manual.pdf || { echo 'error generating .pdf'; exit 0;}
 echo
 echo "generating .docx... => ./output/user-manual.docx"
-pandoc user-manual.md -o ./output/user-manual.docx
+pandoc user-manual.md -o ./output/user-manual.docx || { echo 'error generating .docx'; exit 0;}
 echo
 echo "generating .odt... => ./output/user-manual.odt"
-pandoc user-manual.md -o ./output/user-manual.odt
+pandoc user-manual.md -o ./output/user-manual.odt || { echo 'error generating .odt'; exit 0;}
 echo
