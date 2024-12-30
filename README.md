@@ -42,7 +42,9 @@ Dark Mode 🌙 and Light Mode 💡 are auto-applied based on the user's system s
 
 ### Site Navigation Example 📼
 
-[Site Navigation Demo](static_README/navigation-demo.webm)
+<!-- [Site Navigation Demo](static_README/navigation-demo.webm) -->
+[Site Navigation Demo](https://github.com/user-attachments/assets/a9a082c7-a7cd-4881-a0fd-a60757b5c6f7)
+
 
 Browser-native smooth scrolling and navigation ✨.
 
