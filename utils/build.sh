@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# declare PATHs relative to root of the repo
+# declare PATHs relative to the repo's /docs directory
 HTML_PATH=./public/index.html
 PDF_PATH=./output/user-manual.pdf
 DOCX_PATH=./output/user-manual.docx
@@ -34,7 +34,7 @@ echo "generating website... => $HTML_PATH"
 cp -R ./static/ ./public/
 pandoc user-manual.md -s -c ./static/style.css --toc -o $HTML_PATH || { echo 'error generating index.html'; exit 0;}
 echo "generating .pdf... => $PDF_PATH"
-pandoc user-manual.md --template=template.tex --pdf-engine=xelatex --toc -o $PDF_PATH || { echo 'error generating .pdf'; exit 0;}
+pandoc user-manual.md --template=template.tex --pdf-engine=pdflatex --toc -o $PDF_PATH || { echo 'error generating .pdf'; exit 0;}
 echo "generating .docx... => $DOCX_PATH"
 pandoc user-manual.md -o $DOCX_PATH || { echo 'error generating .docx'; exit 0;}
 echo "generating .odt... => $ODT_PATH"

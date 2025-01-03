@@ -64,13 +64,13 @@ Browser-native smooth scrolling and navigation ✨.
 
 ### Installation Instructions for Dependencies ⬇️ 📦
 
-#### macOS (using Homebrew):
+#### macOS (with Homebrew and .pkg dependencies):
 
 1. Install Homebrew if you haven't already: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. Update Homebrew: `brew update`
-3. Install pandoc and recommended dependencies:
+3. Install the full [MacTeX package](https://tug.org/mactex/mactex-download.html)
+4. Install pandoc and recommended dependencies via Homebrew:
    - `brew install pandoc`
-   - `brew install --cask mactex` (for LaTeX support)
    - `brew install imagemagick` (for image conversion)
    - `brew install librsvg` (for SVG support)
    - `brew install libxml2` (for XML support)
