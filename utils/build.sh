@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# declare PATHs relative to the repo's /docs directory
+# declare PATHs relative to the root of the repo
 HTML_PATH=./public/index.html
 PDF_PATH=./output/user-manual.pdf
 DOCX_PATH=./output/user-manual.docx
