@@ -77,6 +77,11 @@ nav ul li {
 }
 
 @media (max-width: 94rem) {
+    #toc-title {
+        font-size: 0.82rem;
+        color: white;
+    }
+
     nav {
         font-size: 0.75rem;
         position: fixed;
@@ -85,7 +90,7 @@ nav ul li {
         bottom: 0rem;
         right: 0.5rem;
         text-align: right;
-        background: rgba(17, 17, 17, 0.7);
+        background: rgba(0, 0, 0, 0.7);
         border-radius: 0.325rem;
         max-height: 14rem;
         max-width: 8.75rem;

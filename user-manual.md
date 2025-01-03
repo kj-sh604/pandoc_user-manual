@@ -4,7 +4,8 @@ subtitle: Demo Product (Not Real)
 author: kj_sh604
 date: 03:14:07 UTC on January 19, 2038
 linkcolor: blue
-pdf-engine: xelatex
+pdf-engine: pdflatex
+toc-title: Table of Contents
 viewport: width=device-width, initial-scale=1
 ---
 
