@@ -494,6 +494,17 @@ $if(logo)$
 $endif$
 $endif$
 
+% emoji support if lualatex is used
+\ifLuaTeX
+  \usepackage{fontspec}
+  \directlua{luaotfload.add_fallback(
+               "myfallback",
+               {"NotoColorEmoji.ttf:mode=harf;"}
+             )}
+  \setmainfont[RawFeature={fallback=myfallback}]{LatinModernRoman}
+  \setmonofont[RawFeature={fallback=myfallback}]{LatinModernMono}
+\fi
+
 \begin{document}
 $if(has-frontmatter)$
 \frontmatter
