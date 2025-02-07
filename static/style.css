@@ -39,12 +39,15 @@
     margin: 0;
 }
 
-
 html {
+    scroll-behavior: smooth;
+}
+
+body {
     max-width: 80rem;
     width: 100%;
     padding-bottom: 48rem;
-    scroll-behavior: smooth;
+    font-family: sans-serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 img {
